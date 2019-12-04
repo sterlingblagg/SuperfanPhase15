@@ -1,0 +1,56 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/favicon.png" rel="icon" type="image/x-icon" />
+		<title>Apex Legends SuperFan Website</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body onload="alertUser()">
+		<div class="column" id="left-column">
+			<div class="button yellow align-text hover" id="button1" onclick="lockInLeft()">
+				<p>LOCK IN</p>
+			</div>
+			<div class="box-space">
+				<div class="box orange center hover" id="left1" onclick="cycleLeft()">
+					<img src="images/pathfinder1.png" id="box1" class="contain-img">
+				</div>
+				<div class="box blue center hover" id="left2" onclick="cycleLeft2()">
+					<img src="images/bloodhound.png" id="box2"class="contain-img">
+				</div>
+				<div class="box green center hover" id="left3" onclick="cycleLeft3()">
+					<img src="images/bangalore.png" id="box3" class="contain-img">
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="button red align-text hover" onclick="resetPage(true)">
+				<p>RESET</p>
+			</div>
+			<div class="bigbox white align-text2 hover" id="bigbox" onclick="randomSelection()">
+				<div>Battle!</div>
+			</div>
+		</div>
+		<div class="column" id="right-column">
+			<div class="button yellow align-text hover" id="button2" onclick="lockInRight()">
+				<p>LOCK IN</p>
+			</div>
+			<div class="box-space">
+				<div class="box orange center hover" id="right1" onclick="cycleRight()">
+					<img src="images/wraith.png" id="box4" class="contain-img">
+				</div>
+				<div class="box blue center hover" id="right2" onclick="cycleRight2()">
+					<img src="images/gibraltar.png" id="box5" class="contain-img">
+				</div>
+				<div class="box green center hover" id="right3" onclick="cycleRight3()">
+					<img src="images/lifeline.png" id="box6" class="contain-img">
+				</div>
+			</div>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+	
+</html>
